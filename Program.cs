@@ -61,11 +61,11 @@ class Program
             return;
         }
 
-        // Проверяем, является ли текст ссылкой
+
         if (Uri.TryCreate(text, UriKind.Absolute, out Uri uriResult)
             && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps))
         {
-            // Сохраняем ссылку
+
             var linkItem = new LinkItem
             {
                 UserId = userId,
